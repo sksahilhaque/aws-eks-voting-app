@@ -102,7 +102,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  namespace: voting-app
+  namespace: voting-appllication
   name: result-ingress
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
@@ -167,7 +167,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: voting-app
+  namespace: voting-appllication
   name: redis
 spec:
   selector:
@@ -206,7 +206,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: voting-app
+  namespace: voting-appllication
   name: db
 spec:
   selector:
